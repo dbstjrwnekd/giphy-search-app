@@ -32,7 +32,7 @@ export default function Home(initialData) {
       </Head>
 
       <h1>Giphy Search App</h1>
-      
+
       <form onSubmit={search}>
         <input name="searchTerm" type="text" onChange={handleInputs} required />
         <button>Search</button>
