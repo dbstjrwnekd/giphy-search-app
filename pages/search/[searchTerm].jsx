@@ -1,6 +1,7 @@
 import Head from "next/head"
 import { useRouter } from "next/router"
 import Link from "next/link"
+import Footer from "../../components/Footer"
 
 export default function Search(initalData) {
     const router = useRouter()
@@ -24,6 +25,7 @@ export default function Search(initalData) {
                     )
                 })}
             </div>
+            <Footer />
         </>
     )
 }

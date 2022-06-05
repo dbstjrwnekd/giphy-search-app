@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import { useState, useEffect } from 'react'
 import Link from 'next/link'
+import Footer from '../components/Footer'
 
 export default function Home(initialData) {
   const [formInputs, setFormInputs] = useState({})
@@ -25,6 +26,7 @@ export default function Home(initialData) {
   }
 
   return (
+    <>
     <div className={"container"}>
       <Head>
         <title>Create Next App</title>
@@ -64,6 +66,8 @@ export default function Home(initialData) {
         })}
       </div>
     </div>
+    <Footer />
+    </>
   )
 }
 
